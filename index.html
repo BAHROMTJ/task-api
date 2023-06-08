@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <div class="div"><button class="add">add</button></div>
+       
+    <table class="styled-table">  
+
+      <thead> 
+        
+        <tr>
+          <th>Name</th>
+          <th>Points</th>
+          <th colspan="2">Actions</th>
+         
+        
+        </tr>
+      </thead>
+      <tbody class="styled-tbody"></tbody>
+    </table>
+    <dialog id="addUser">
+      <form class="addUserForm">
+        <input type="text" name="name" placeholder="John" />
+        <input type="number" name="points" placeholder="25" />
+        <button type="submit">add</button>
+          
+      </form>
+    <button class="addCancel">cancel</button>
+    </dialog>
+    <dialog id="editUser">
+      <form class="editUserForm">
+        <input type="text" name="name" />
+        <input type="number" name="points" />
+        <button type="submit">edit</button>
+      </form>
+      <button class="editCancel">cancel</button>
+    </dialog>
+    <dialog id="delUser">
+      <h5>Do you really remove user?</h5>
+      <button class="yes">yes</button>
+      <button class="no">no</button>
+    </dialog>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="js/data.js"></script>
+    <script type="module" src="js/dom.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
